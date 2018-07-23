@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>配置参数-汉字数独</title>
+	<style>
+		.container {
+			width: 1000px;
+			text-align: center;
+			margin: auto;
+		}
+		form {
+			padding-top: 200px;
+			width: 100%;
+			text-align: center;
+		}
+		.import1 {
+			width: 60%;
+			margin: 0 auto;
+			text-align: left;
+		}
+		.import1::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.import1 p {
+			width: 220px;
+			float: left;
+			margin-right: 10px;
+		}
+		.import1 input {
+			width: 58%;
+			height: 30px;
+			margin-top: 10px;
+			border:1px solid #ccc;
+			text-indent: 10px;
+			outline: none;
+		}
+		.btn {
+		  background: #d0451b;
+		  background-image: -webkit-linear-gradient(top, #d0451b, #bc3315);
+		  background-image: -moz-linear-gradient(top, #d0451b, #bc3315);
+		  background-image: -ms-linear-gradient(top, #d0451b, #bc3315);
+		  background-image: -o-linear-gradient(top, #d0451b, #bc3315);
+		  background-image: linear-gradient(to bottom, #d0451b, #bc3315);
+		  -webkit-border-radius: 3;
+		  -moz-border-radius: 3;
+		  border-radius: 3px;
+		  text-shadow: 0px 1px 0px #854629;
+		  -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
+		  -moz-box-shadow: inset 0px 1px 0px 0px #cf866c;
+		  box-shadow: inset 0px 1px 0px 0px #cf866c;
+		  font-family: Arial;
+		  color: #ffffff;
+		  font-size: 16px;
+		  padding: 12px 30px 12px 30px;
+		  border: solid #942911 1px;
+		  text-decoration: none;
+		}
+
+		.btn:hover {
+		  color: #ffffff;
+		  background: #bc3315;
+		  text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form action="b.php" method="post">
+			<div class="import1">
+				<p>输入9个汉字，以中横线(-)分割</p>
+				<input type="text" name="chars" value="许-武-彬-王-老-师-北-乔-锋">
+			</div>
+			<div class="import1">
+				<p>输入去除的空白区域数字</p>
+				<input type="text" name="nums"   value="9">
+			</div>
+			<button class="btn">提交</button>
+		</form>
+	</div>
+</body>
+</html>
